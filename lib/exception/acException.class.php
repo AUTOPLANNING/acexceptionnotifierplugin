@@ -115,8 +115,8 @@ class acException extends sfException
 	    if (class_exists('sfContext', false) && sfContext::hasInstance())
 	    {
 	      $context = sfContext::getInstance();
-	      $traces[] = '<strong>Symfony settings :</strong>';
-	      $traces[] = $settingsTable = self::formatArrayAsHtml(sfDebug::settingsAsArray());
+	    //  $traces[] = '<strong>Symfony settings :</strong>';
+	    //  $traces[] = $settingsTable = self::formatArrayAsHtml(sfDebug::settingsAsArray());
 	      $traces[] = '<strong>Request :</strong>';
 	      $traces[] = $requestTable  = self::formatArrayAsHtml(sfDebug::requestAsArray($context->getRequest()));
 	      $traces[] = '<strong>Response :</strong>';
